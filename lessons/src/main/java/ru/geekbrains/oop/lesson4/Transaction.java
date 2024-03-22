@@ -23,7 +23,7 @@ public class Transaction<T extends Box<?>> {
 
             for (int i = 0; i < count; i++) {
                 from.getFruits().remove(i);
-                to.getFruits().add(from.getFruits().get(i)); //incompatible types: ru.geekbrains.oop.lesson4.Fruit cannot be converted to capture#1 of ?
+//                to.getFruits().add(from.getFruits().get(i)); //incompatible types: ru.geekbrains.oop.lesson4.Fruit cannot be converted to capture#1 of ?
             }
 
             System.out.println();
@@ -35,7 +35,7 @@ public class Transaction<T extends Box<?>> {
     }
 
     public void empty(T from, T to) {
-        to.getFruits().addAll(from.getFruits()); //incompatible types: java.util.ArrayList<capture#3 of ?> cannot be converted to java.util.Collection<? extends capture#4 of ?>
+//        to.getFruits().addAll(from.getFruits()); //incompatible types: java.util.ArrayList<capture#3 of ?> cannot be converted to java.util.Collection<? extends capture#4 of ?>
         from.getFruits().clear();
         System.out.println(to.getFruits().size());
         System.out.println(from.getFruits().size());
